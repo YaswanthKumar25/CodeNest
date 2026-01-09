@@ -1,0 +1,179 @@
+.loginpage {
+  background-image: url("../images/background-2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  backdrop-filter: blur(10px);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  float: left;
+  padding-left: 30px;
+}
+.titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  height: 55%;
+  backdrop-filter: blur(50px);
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.login-title {
+  font-size: 170px;
+  color: rgb(233, 231, 236);
+}
+.login-subtitle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 42px;
+  font-weight: lighter;
+  font-style: initial;
+  color: rgb(240, 235, 239);
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  float: right;
+}
+.loginbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: auto;
+  width: 50%;
+  padding-bottom: 30px;
+  backdrop-filter: blur(20px);
+  animation: fade-out 0.8s ease-in-out;
+}
+@keyframes fade-out {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loginbox h2 {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.loginbox form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  gap: 30px;
+}
+.loginbox input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
+.input {
+  padding: 10px;
+  font-size: 16px;
+  height: 25px;
+}
+.loginbox button {
+  height: 35px;
+  width: 100%;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.loginbox p {
+  text-align: center;
+  cursor: pointer;
+  font-size: larger;
+  color: white;
+}
+.loginbox button:hover {
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  transform: scaleY(1.05);
+  transition: all 0.3s ease-in-out;
+}
+.loginbox p:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .left {
+    display: none;
+  }
+  .right {
+    width: 100%;
+  }
+  .loginbox p {
+    font-size: medium;
+    font-weight: 500;
+    color: rgb(10, 10, 10);
+
+    background-color: white;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: black 0px 0px 10px 2px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-title {
+    font-size: 120px;
+  }
+  .login-subtitle {
+    font-size: 30px;
+  }
+  .login-title {
+    font-size: 85px;
+    color: rgb(145, 141, 141);
+    width: auto;
+  }
+  .login-subtitle {
+    font-size: 22px;
+  }
+  .loginbox {
+    width: 70%;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1450px) {
+  .login-title {
+    font-size: 120px;
+    color: rgb(145, 141, 141);
+    width: auto;
+  }
+  .login-subtitle {
+    font-size: 30px;
+  }
+  .loginbox {
+    width: 70%;
+  }
+}

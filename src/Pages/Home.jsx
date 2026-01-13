@@ -7,7 +7,7 @@ import Footer from "../Components/Footer";
 import "../styles1/Hero.css";
 function Home() {
   return (
-    <div>
+    <div className="home">
       <Navbar />
       <hero className="hero">
         <p className="hero-title">Where Coding Meets Intelligence</p>

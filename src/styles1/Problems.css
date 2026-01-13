@@ -1,0 +1,114 @@
+.problem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.problem-header input {
+  width: 300px;
+  height: 35px;
+  font-size: large;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.problem-header p {
+  font-weight: 700;
+  font-size: xx-large;
+  margin: 20px;
+  margin-left: 40px;
+  text-shadow: 2px 2px 2px rgb(107, 98, 98);
+  text-decoration: line-through 1px #ddd;
+}
+.problem-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  margin: 20px;
+}
+.problem-buttons .active {
+  background-color: #2563eb;
+  color: white;
+}
+.difficulty {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+.difficulty.easy {
+  background-color: #22c55e;
+}
+.difficulty.medium {
+  background-color: #f59e0b;
+}
+.difficulty.hard {
+  background-color: #ef4444;
+}
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+.status.solved {
+  background-color: #16a34a;
+}
+.status.attempted {
+  background-color: #eab308;
+  color: #000;
+}
+.status.unsolved {
+  background-color: #9ca3af;
+}
+#button {
+  padding: 10px 20px;
+  font-size: medium;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+table {
+  width: 98%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  line-height: 35px;
+}
+th {
+  background-color: #f4f4f4;
+}
+.problem-title {
+  width: 40%;
+}
+tbody tr {
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+  cursor: pointer;
+  transform: scale(1.005);
+}
+tbody tr:hover {
+  border-left: 4px solid #2563eb;
+}
+.problem-buttons select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: medium;
+  margin-left: 20px;
+}

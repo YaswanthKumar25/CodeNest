@@ -2,8 +2,8 @@ import "../styles1/FeatureCard.css";
 
 function FeatureCard({ img, title, description }) {
   return (
-    <div>
-      <h3 style={{ color: "#d3caca", fontSize: "28px" }}>{title}</h3>
+    <div className="featurecard-title" >
+      <h3 style={{ color: "#d3caca", fontSize: "28px" }} className="featurecard-title">{title}</h3>
       <p style={{ color: "#d3caca", margin: "20px", fontSize: "20px" }}>
         {description}
       </p>

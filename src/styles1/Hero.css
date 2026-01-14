@@ -8,9 +8,12 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
-  animation: fadeUp 0.8s ease-out;
+  animation: fadeUp 0.8s ease-in-out;
+  animation: scrolling;
+  animation-timeline: view();
+  animation-range: entry 70% 2%;
 }
 @keyframes fadeUp {
   from {

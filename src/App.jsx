@@ -5,7 +5,7 @@ import Problems from "./Pages/Problems";
 function App() {
   return (
     <>
-      <Problems/>
+      <Home />
     </>
   );
 }

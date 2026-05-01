@@ -1,0 +1,149 @@
+/* Global Form Element Fixes - Text Visibility */
+
+/* ── Dark theme: select / option ───────────────────────────────────────── */
+select,
+select option {
+    color: #ffffff !important;
+    background-color: rgba(15, 23, 42, 0.8) !important;
+}
+
+select:focus {
+    color: #ffffff !important;
+    background-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+option {
+    color: #ffffff !important;
+    background-color: #1e293b !important;
+}
+
+/* ── Dark theme: inputs ─────────────────────────────────────────────────── */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+textarea {
+    color: #ffffff !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #94a3b8 !important;
+    opacity: 0.7;
+}
+
+/* ── Dark theme: datetime inputs ────────────────────────────────────────── */
+input[type="datetime-local"],
+input[type="date"],
+input[type="time"] {
+    color: #ffffff !important;
+    background-color: rgba(15, 23, 42, 0.8) !important;
+    color-scheme: dark;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+/* ── Select dropdown arrow ──────────────────────────────────────────────── */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1em;
+    padding-right: 2.5rem !important;
+}
+
+/* ── Autofill ───────────────────────────────────────────────────────────── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0 30px rgba(15, 23, 42, 0.8) inset !important;
+}
+
+/* ── Disabled / readonly ────────────────────────────────────────────────── */
+input:disabled,
+select:disabled,
+textarea:disabled {
+    color: #94a3b8 !important;
+    opacity: 0.6;
+}
+
+input:read-only,
+textarea:read-only {
+    color: #cbd5e1 !important;
+}
+
+/* ── Light theme overrides ──────────────────────────────────────────────── */
+.light-theme input[type="text"],
+.light-theme input[type="email"],
+.light-theme input[type="password"],
+.light-theme input[type="number"],
+.light-theme input[type="search"],
+.light-theme input[type="url"],
+.light-theme textarea {
+    color: #0f172a !important;
+    background-color: #f1f5f9 !important;
+    border-color: rgba(2, 132, 199, 0.25) !important;
+}
+
+.light-theme input::placeholder,
+.light-theme textarea::placeholder {
+    color: #64748b !important;
+    opacity: 1;
+}
+
+.light-theme input:focus,
+.light-theme textarea:focus {
+    background-color: #ffffff !important;
+    border-color: #0284c7 !important;
+}
+
+.light-theme select,
+.light-theme select option {
+    color: #0f172a !important;
+    background-color: #f1f5f9 !important;
+}
+
+.light-theme input[type="datetime-local"],
+.light-theme input[type="date"],
+.light-theme input[type="time"] {
+    color: #0f172a !important;
+    background-color: #f1f5f9 !important;
+    color-scheme: light;
+}
+
+.light-theme input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+.light-theme input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: none;
+}
+
+.light-theme select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f172a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+}
+
+.light-theme input:-webkit-autofill,
+.light-theme input:-webkit-autofill:hover,
+.light-theme input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #0f172a !important;
+    -webkit-box-shadow: 0 0 0 30px #f1f5f9 inset !important;
+}
+
+/* ── Light theme: table text ────────────────────────────────────────────── */
+.light-theme th {
+    color: #475569;
+}
+
+.light-theme td {
+    color: #0f172a;
+}

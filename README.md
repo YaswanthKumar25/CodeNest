@@ -500,6 +500,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 ## Authors
 
 - **Balaji** — [github.com/balaji-510](https://github.com/balaji-510)
+- **Yaswanth-Kumar** -  [github.com/YaswanthKumar25](https://github.com/YaswanthKumar25)
 
 ---
 
